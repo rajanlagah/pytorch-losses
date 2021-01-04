@@ -3,4 +3,4 @@
 ```
 pip install -e .[dev]
 
-```# pytorch-losses
+```
