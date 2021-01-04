@@ -25,5 +25,8 @@ setup(
         "dev": [
             "pytest >= 3.7"
         ]
-    }
+    },
+    url="https://github.com/rajanlagah/pytorch-losses.git",
+    author="Rajan Lagah",
+    author_email="rajanlagah@gmail.com"
 )
