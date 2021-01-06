@@ -5,7 +5,7 @@ with open("README.md","r") as fh:
 
 setup(
     name="pytorchLosses",
-    version='0.0.1',
+    version='0.3.0',
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
