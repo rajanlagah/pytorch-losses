@@ -1,3 +1,10 @@
+# Install to use
+
+```
+pip install pytorchLosses
+```
+
+
 # Download to develop 
 
 ```
