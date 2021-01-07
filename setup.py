@@ -5,7 +5,7 @@ with open("README.md","r") as fh:
 
 setup(
     name="pytorchLosses",
-    version='0.3.0',
+    version='0.3.2',
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
@@ -13,8 +13,8 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
         "Operating System :: OS Independent",
     ],
-    description='Say hello',
-    py_modules=['LabelSmoothingCrossEntropy'],
+    description='Pytorch loss functions',
+    py_modules=['pytorchLosses'],
     package_dir={'':'src'},
     long_description=long_description,
     long_description_content_type="text/markdown",

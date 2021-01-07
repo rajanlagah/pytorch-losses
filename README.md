@@ -32,7 +32,7 @@ print(loss_fun(a.cuda(),b.cuda()))
 
 # Explanation 
  - [Label encoding](#Label_encoding)
- - 
+ - [Gamblers loss](#Gamblers_loss)
 
 ## Label_encoding
 Neural net face 2 major error that are we usually told in every course and 1 major issue that is not famous which is called over confidence. 
@@ -40,9 +40,21 @@ Neural net face 2 major error that are we usually told in every course and 1 maj
   consider 100 examples within our dataset, each with predicted probability 0.9 by our model. If our model is calibrated, then 90 examples should be classified correctly. Similarly, among another 100 examples with predicted probabilities 0.6, we would expect only 60 examples being correctly classified. Copied form [here](https://towardsdatascience.com/what-is-label-smoothing-108debd7ef06). Read full artical and if you like him love by applauding his work.
   So basically convert [(0,1)] prediction to [(0.0333,0.9666)]
 
+## Gamblers_loss
+We transform the original m-class classification problem to (m+1)-class where the (m+1)-th class represents the model abstaining from making a prediction due to disconfidence. 
+
+We predict probabilities of the m classes and use the (m + 1)-th class as an additional rejection score.
+
 # Download to develop 
 
 ```
 pip install -e .[dev]
 
 ```
+
+## TODO
+
+- [ ] Explanation of loss functions
+- [ ] Scores of loss functions for MNIST datasets
+- [ ] Add more loss functions 
+### Code for the following loss functions are taken from various kaggle notebooks.
